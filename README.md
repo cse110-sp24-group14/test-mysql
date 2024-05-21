@@ -5,9 +5,7 @@
 - Make sure docker is running in the background. `docker -v` should return a version number
 - Run `bash docker-init.sh <container-name>`with the specific container name. The name should not matter. You may get some warnings but no errors
 - Run `npm install` to install all necessary packages
-- Run `node server.js` to start the server. This creates an HTTP server that allows our frontend to talk to our backend 
-
-
+- Run `node server.js` to start the server. This creates an HTTP server that allows our frontend to talk to our backend. Don't use live server (this also means that you need to restard the server to view any changes...you may want to prototype without a db connection just using live server)
 - To remove the container, run `docker-remove.sh <container-name>`. Container names can be found with `docker ps -a`
 
 ## Viewing the database
